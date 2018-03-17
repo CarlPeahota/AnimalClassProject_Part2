@@ -1,8 +1,10 @@
-//Inteelisense suggested using @Override, but I'm not clear as to why, since it ran fine w/o it before the change was made
+//Intelisense suggested using @Override, but I'm not clear as to why, since it ran fine w/o it before the change was made
 
 //I am adding this new comment 1
 
 package AnimalInheritance;
+
+import java.util.Scanner;
 
 class Animal {
     public void makeSound() {}
@@ -34,9 +36,28 @@ class Program {
         Animal a = new Dog();
         Animal b = new Cat();
         
+        Scanner myInput = new Scanner(System.in);
+        
+        String myName = myInput.nextLine().toUpperCase();
+        System.out.println(myName);
+        
+        
+        //System.out.println(myName);
+        if (myName == "DOG") {
+            a.makeSound();
+            a.cuteness();
+        } else if (myName == "CAT") {
+            b.makeSound();
+            b.cuteness();            
+        } else {
+            System.out.println("Not defined!");
+        }
+        
+       /* 
         a.makeSound();
         a.cuteness();
         b.makeSound();
         b.cuteness();
+        */
     }
 }
