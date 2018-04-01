@@ -38,11 +38,10 @@ class Program {
         
         Scanner myInput = new Scanner(System.in);
         
-        String myName = myInput.nextLine().toUpperCase();
+        //String myName = myInput.nextLine().toUpperCase();
+        String myName = "CAT";
         System.out.println("You entered --->" + myName);
         
-        
-        //this part always produces "Not defined"...not sure why
         if (myName == "DOG") {
             a.makeSound();
             a.cuteness();
@@ -52,5 +51,6 @@ class Program {
         } else {
             System.out.println("Not defined!");
         }
+
     }
 }
