@@ -15,7 +15,7 @@ public class App {
             allInsects[i].eat();
         }
         
-        /*
+        /* I was just playing with an enhanced FOR-LOOP
         for (insects : allInsects) {
             System.out.println(insects);
         }
