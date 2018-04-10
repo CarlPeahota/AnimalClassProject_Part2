@@ -1,7 +1,3 @@
-//Intelisense suggested using @Override, but I'm not clear as to why, since it ran fine w/o it before the change was made
-
-//I am adding this new comment 1
-
 package AnimalInheritance;
 
 import java.util.Scanner;
@@ -38,14 +34,13 @@ class Program {
         
         Scanner myInput = new Scanner(System.in);
         
-        //String myName = myInput.nextLine().toUpperCase();
-        String myName = "CAT";
+        String myName = myInput.nextLine().toUpperCase();
         System.out.println("You entered --->" + myName);
         
-        if (myName == "DOG") {
+        if (myName.equals("DOG")) {
             a.makeSound();
             a.cuteness();
-        } else if (myName == "CAT") {
+        } else if (myName.equals("CAT")) {
             b.makeSound();
             b.cuteness();            
         } else {
