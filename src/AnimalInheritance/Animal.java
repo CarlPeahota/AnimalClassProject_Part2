@@ -36,15 +36,21 @@ class Program {
         
         String myName = myInput.nextLine().toUpperCase();
         System.out.println("You entered --->" + myName);
-        
-        if (myName.equals("DOG")) {
-            a.makeSound();
-            a.cuteness();
-        } else if (myName.equals("CAT")) {
-            b.makeSound();
-            b.cuteness();            
-        } else {
-            System.out.println("Not defined!");
+ 
+        switch (myName) {
+            case "DOG": 
+                System.out.println("It's a dog");
+                a.makeSound();
+                a.cuteness();                
+                break;
+            case "CAT": 
+                System.out.println("It's a cat");
+                b.makeSound();
+                b.cuteness();                                
+                break;            
+            default:
+                System.out.println("Not defined.");
+                break;
         }
 
     }
