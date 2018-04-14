@@ -10,16 +10,17 @@ public class App {
         allInsects[1] = new Beatle();
         allInsects[2] = new Spider();
         
+    
         
-        for (int i = 0; i < allInsects.length; i++) {
+/*        
+        for (int i = 0; allInsects.length >= i; i++) {
             allInsects[i].eat();
         }
-        
-        /* I was just playing with an enhanced FOR-LOOP
-        for (insects : allInsects) {
-            System.out.println(insects);
+*/
+
+        for (Insect allInsect : allInsects) {
+                    allInsect.eat();
+
         }
-        */
     }
-    
 }
