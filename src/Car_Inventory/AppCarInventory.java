@@ -14,11 +14,6 @@ public class AppCarInventory {
         for (Cars allCar : allCars) {
             allCar.yr();
         }
-        /* I was just playing with an enhanced FOR-LOOP
-        for (insects : allInsects) {
-        System.out.println(insects);
-        }
-         */
     }
     
 }
